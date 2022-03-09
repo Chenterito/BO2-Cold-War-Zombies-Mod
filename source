@@ -342,6 +342,7 @@ drop_weapon()
 				if (duration == 25) 
 				{
 					weap = self getCurrentWeapon();
+					if(weap != "none" && weap != "knife_zm")
 					self dropItem(weap);
 					break;
 				}
